@@ -17,3 +17,6 @@
 *.css.map
 *.sass.map
 *.scss
+design/
+*.md
+!README.md
