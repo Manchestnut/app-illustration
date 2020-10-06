@@ -21,7 +21,9 @@
   <body>
     <section class="phone">
       <header>
-        <p>Samuel Green</p>
+        <div class="notch"></div>
+        <img src="images/avatar.jpg" />
+        <p class="name">Samuel Green</p>
         <p class="sub-text">Available to Walk</p>
       </header>
       <div class="convo convo-left" id="convo-1">
@@ -30,31 +32,37 @@
       <div class="convo convo-left" id="convo-2">
         <p>Could you send over some pictures of your dog, please?</p>
       </div>
-      <span class="convo convo-right" id="img">
+      <div id="pics">
         <img src="images/dog-image-1.jpg" />
         <img src="images/dog-image-2.jpg" />
         <img src="images/dog-image-3.jpg" />
-      </span>
+      </div>
       <div class="convo convo-right" id="convo-3">
         <p>Here are a few pictures. She’s a happy girl!</p>
       </div>
       <div class="convo convo-right" id="convo-4">
         <p>Can you make it?</p>
       </div>
+
       <div class="convo convo-left" id="convo-5">
         <p>
           She looks so happy! The time we discussed works. How long shall I take
           her out for?
         </p>
       </div>
-      <div class="convo-left convo-choice" id="choice-1">
-        <p>30 minute walk</p>
+      <div class="convo-choice" id="choice-1">
+        <span class="circle"></span>
+        <span class="text">30 minute walk</span>
         <span class="strong">$29</span>
       </div>
-      <p>1 hour walk</p>
-      <span class="strong">$49</span>
+      <div class="convo-choice" id="choice-2">
+        <span class="circle"></span>
+        <span class="text">1 hour walk</span>
+        <span class="strong">$49</span>
+      </div>
       <div class="text-input">
-        <p class="sub-text">Type a message…</p>
+        <span class="sub-text">Type a message…</span
+        ><span id="button">&gt</span>
       </div>
     </section>
     <section class="info">

@@ -7,6 +7,188 @@
 
 body {
   font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  background: #f5f3f7;
+}
+
+/**Phone**/
+.phone {
+  max-width: 300px;
+  min-width: 250px;
+  border: 10px solid white;
+  border-radius: 30px;
+  margin: auto;
+  margin-block: 50px;
+  /**Header**/
+  /**Chat**/
+}
+
+.phone header {
+  background-image: -webkit-gradient(linear, left top, right top, from(#8838ff), to(#e942ff));
+  background-image: linear-gradient(to right, #8838ff, #e942ff);
+  border-radius: 20px 20px 5px 5px;
+  padding-bottom: 5px;
+}
+
+.phone header .name {
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 2px;
+}
+
+.phone header .sub-text {
+  font-size: 11px;
+  padding-bottom: 8px;
+  color: #d89eff;
+}
+
+.phone header p {
+  margin-left: 10px;
+}
+
+.phone header .notch {
+  background: white;
+  height: 20px;
+  width: 60%;
+  border-radius: 0 0 15px 15px;
+  margin: auto;
+}
+
+.phone header img {
+  width: 31px;
+  border-radius: 50%;
+  float: left;
+  margin: 10px;
+  border: solid white;
+}
+
+.phone .convo {
+  padding: 10px 5px;
+  border-radius: 15px 15px 15px 5px;
+  margin: 10px 5px;
+  max-width: 60%;
+}
+
+.phone .convo-left {
+  color: #9c5ec5;
+  background: #dbc7ea;
+}
+
+.phone #pics img {
+  width: 60px;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.phone #pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.phone .convo-right {
+  color: #6e5d7e;
+  background: white;
+  border-radius: 15px 15px 5px 15px;
+  margin-left: auto;
+}
+
+.phone .convo-choice {
+  border-radius: 15px 15px 15px 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: white;
+  max-width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5px;
+}
+
+.phone .convo-choice .circle {
+  display: inline-block;
+  border: 1px solid #d89eff;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.phone .convo-choice .strong {
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: 5px;
+  margin-left: auto;
+}
+
+.phone .convo-choice .text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-inline: 10px;
+}
+
+.phone #choice-1,
+.phone #choice-2 {
+  background: -webkit-gradient(linear, right top, left top, from(#8838ff), to(#e942ff));
+  background: linear-gradient(to left, #8838ff, #e942ff);
+}
+
+.phone .text-input {
+  padding: 5px 10px;
+  background: white;
+  border-radius: 30px;
+  color: #c6cacd;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone .text-input .sub-text {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.phone .text-input #button {
+  margin-left: auto;
+  background: #3e2753;
+  padding: 5px 10px;
+  border-radius: 50%;
   font-size: 16px;
+  font-weight: 700;
+}
+
+.info h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #3e2753;
+  padding-bottom: 20px;
+}
+
+.info p {
+  margin-inline: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #a39daa;
+  line-height: 1.5rem;
+  padding-bottom: 40px;
 }
 /*# sourceMappingURL=style.css.map */
