@@ -9,7 +9,6 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 12px;
   background: #f5f3f7;
-  overflow: hidden;
 }
 
 /**Phone**/
@@ -20,6 +19,7 @@ body {
   border-radius: 30px;
   margin: auto;
   margin-block: 50px;
+  background: #f5f3f7;
   /**Header**/
   /**Chat**/
 }
@@ -64,7 +64,7 @@ body {
 }
 
 .phone .convo {
-  padding: 10px 5px;
+  padding: 10px;
   border-radius: 15px 15px 15px 5px;
   margin: 10px 5px;
   max-width: 60%;
@@ -193,14 +193,28 @@ body {
   padding-bottom: 40px;
 }
 
+/**Background elements**/
+#bg-element-1 {
+  height: 600px;
+  width: 400px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e942ff), to(#8838ff));
+  background: linear-gradient(#e942ff, #8838ff);
+  border-radius: 0 0 200px 200px;
+  position: absolute;
+  z-index: -1;
+  left: -200px;
+  top: 0;
+}
+
 /**Media Queries**/
 /**iPad-vertical**/
-@media (min-width: 700px), (max-width: 1023px) {
+@media (min-width: 700px) {
   body {
+    overflow: hidden;
     margin-block: 200px;
   }
   .info {
-    width: 400px;
+    min-width: 440px;
     position: absolute;
     left: 380px;
     bottom: 500px;
@@ -212,10 +226,9 @@ body {
     text-align: start;
     margin-left: 0;
   }
-}
-
-.phone {
-  margin-left: 50px;
+  .phone {
+    margin-left: 50px;
+  }
 }
 
 /**iPad-horizontal**/
@@ -238,6 +251,49 @@ body {
   .info p {
     text-align: start;
     margin-left: 0;
+  }
+  .bg-element {
+    width: 32.4%;
+    height: 95%;
+    position: absolute;
+  }
+  #bg-element-2 {
+    background: #dbdfe1;
+    bottom: -200px;
+    height: 900px;
+    right: -150px;
+    border-radius: 200px 200px 0 0;
+    z-index: -1;
+  }
+}
+
+/**720p HD TV**/
+@media (min-width: 1280px) {
+  body {
+    overflow: hidden;
+    margin-left: 200px;
+  }
+  .info {
+    left: 680px;
+  }
+  .phone {
+    position: absolute;
+    z-index: 1;
+  }
+  .bg-element {
+    width: 32.4%;
+    height: 95%;
+    position: absolute;
+  }
+  #bg-element-1 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#e942ff), to(#8838ff));
+    background: linear-gradient(#e942ff, #8838ff);
+    left: -50px;
+    z-index: -1;
+    border-radius: 0 0 200px 200px;
+  }
+  #bg-element-2 {
+    height: 870px;
   }
 }
 /*# sourceMappingURL=style.css.map */
