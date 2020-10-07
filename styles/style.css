@@ -9,6 +9,7 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 12px;
   background: #f5f3f7;
+  overflow: hidden;
 }
 
 /**Phone**/
@@ -190,5 +191,53 @@ body {
   color: #a39daa;
   line-height: 1.5rem;
   padding-bottom: 40px;
+}
+
+/**Media Queries**/
+/**iPad-vertical**/
+@media (min-width: 700px), (max-width: 1023px) {
+  body {
+    margin-block: 200px;
+  }
+  .info {
+    width: 400px;
+    position: absolute;
+    left: 380px;
+    bottom: 500px;
+  }
+  .info h1 {
+    text-align: start;
+  }
+  .info p {
+    text-align: start;
+    margin-left: 0;
+  }
+}
+
+.phone {
+  margin-left: 50px;
+}
+
+/**iPad-horizontal**/
+@media (min-width: 1024px) {
+  body {
+    margin: auto;
+  }
+  .phone {
+    margin-left: 100px;
+  }
+  .info {
+    width: 400px;
+    position: absolute;
+    left: 500px;
+    bottom: 350px;
+  }
+  .info h1 {
+    text-align: start;
+  }
+  .info p {
+    text-align: start;
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
