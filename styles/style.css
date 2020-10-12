@@ -20,8 +20,20 @@ body {
   margin: auto;
   margin-block: 50px;
   background: #f5f3f7;
+  position: relative;
   /**Header**/
   /**Chat**/
+}
+
+.phone .notch {
+  background: white;
+  height: 20px;
+  width: 168px;
+  border-radius: 0 0 15px 15px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: 0 auto;
 }
 
 .phone header {
@@ -29,6 +41,40 @@ body {
   background-image: linear-gradient(to right, #8838ff, #e942ff);
   border-radius: 20px 20px 5px 5px;
   padding-bottom: 5px;
+  padding-left: 15px;
+  height: 88px;
+}
+
+.phone header #name-pic {
+  margin-top: 15px;
+}
+
+.phone header #nav-1 {
+  color: white;
+  position: relative;
+  top: 44.5px;
+  right: 2px;
+  font-size: 10px;
+  font-weight: 700;
+  -webkit-transform: scaleY(2.3);
+          transform: scaleY(2.3);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.phone header #nav-2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  left: 250px;
+  bottom: 32px;
 }
 
 .phone header .name {
@@ -47,16 +93,8 @@ body {
   margin-left: 10px;
 }
 
-.phone header .notch {
-  background: white;
-  height: 20px;
-  width: 60%;
-  border-radius: 0 0 15px 15px;
-  margin: auto;
-}
-
 .phone header img {
-  width: 31px;
+  width: 28px;
   border-radius: 50%;
   float: left;
   margin: 10px;
@@ -64,10 +102,10 @@ body {
 }
 
 .phone .convo {
-  padding: 10px;
+  padding: 8.9px;
   border-radius: 15px 15px 15px 5px;
   margin: 10px 5px;
-  max-width: 60%;
+  max-width: 65%;
 }
 
 .phone .convo-left {
@@ -99,6 +137,12 @@ body {
   background: white;
   border-radius: 15px 15px 5px 15px;
   margin-left: auto;
+}
+
+.phone #convo-4 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .phone .convo-choice {
@@ -207,14 +251,14 @@ body {
 }
 
 /**Media Queries**/
-/**iPad-vertical**/
-@media (min-width: 700px) {
+/**iPad-portrait**/
+@media (min-width: 768px) {
   body {
     overflow: hidden;
     margin-block: 200px;
   }
   .info {
-    min-width: 440px;
+    min-width: 400px;
     position: absolute;
     left: 380px;
     bottom: 500px;
@@ -231,11 +275,8 @@ body {
   }
 }
 
-/**iPad-horizontal**/
+/**iPad-lansdscape**/
 @media (min-width: 1024px) {
-  body {
-    margin: auto;
-  }
   .phone {
     margin-left: 100px;
   }
@@ -267,7 +308,7 @@ body {
   }
 }
 
-/**720p HD TV**/
+/**Desktop**/
 @media (min-width: 1280px) {
   body {
     overflow: hidden;
@@ -294,6 +335,12 @@ body {
   }
   #bg-element-2 {
     height: 870px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #bg-element-2 {
+    border-radius: 300px 300px 0 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
