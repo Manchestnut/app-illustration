@@ -320,6 +320,7 @@ body {
   .phone {
     position: absolute;
     z-index: 1;
+    bottom: 10px;
   }
   .bg-element {
     width: 32.4%;
